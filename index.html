@@ -1,0 +1,240 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CloudBox - A simple cloud computing web application">
+
+    <title>CloudBox - Cloud Computing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            ☁️ CloudBox
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#storage">Storage</a>
+            <a href="#files">Files</a>
+            <a href="#features">Features</a>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                ☁ Cloud Computing
+            </span>
+
+            <h1>
+                Your Files.<br>
+                <span>Anywhere. Anytime.</span>
+            </h1>
+
+            <p>
+                CloudBox is a simple cloud storage web application
+                that allows you to upload, manage and organize your
+                files from one place.
+            </p>
+
+            <button class="primary-btn"
+                    onclick="goToFiles()">
+                Get Started →
+            </button>
+
+        </div>
+
+        <div class="hero-cloud">
+            <div class="cloud">
+                ☁
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Storage -->
+    <section id="storage" class="section">
+
+        <div class="section-title">
+            <span>STORAGE</span>
+            <h2>Cloud Storage</h2>
+            <p>
+                Monitor your available cloud storage.
+            </p>
+        </div>
+
+        <div class="storage-card">
+
+            <div class="storage-header">
+                <div>
+                    <h3>Storage Usage</h3>
+                    <p id="storageText">
+                        2.4 GB of 10 GB used
+                    </p>
+                </div>
+
+                <div class="storage-icon">
+                    ☁️
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div id="progressBar"
+                     class="progress-bar">
+                </div>
+            </div>
+
+            <div class="storage-footer">
+                <span id="percentage">
+                    24% used
+                </span>
+
+                <span>
+                    10 GB total
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Files -->
+    <section id="files" class="section files-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span>MY CLOUD</span>
+
+                <h2>My Files</h2>
+
+                <p>
+                    Upload and manage your cloud files.
+                </p>
+            </div>
+
+            <label class="upload-button">
+
+                + Upload File
+
+                <input type="file"
+                       id="fileInput"
+                       onchange="uploadFile()">
+
+            </label>
+
+        </div>
+
+
+        <div class="table-card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>FILE NAME</th>
+                        <th>TYPE</th>
+                        <th>SIZE</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+
+                <tbody id="fileList">
+
+                    <tr>
+                        <td>
+                            <span class="file-icon">📄</span>
+                            Project_Report.pdf
+                        </td>
+
+                        <td>PDF</td>
+
+                        <td>1.20 MB</td>
+
+                        <td>
+                            <button class="delete-button"
+                                    onclick="deleteFile(this, 0.0012)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span class="file-icon">🖼️</span>
+                            Cloud_Image.jpg
+                        </td>
+
+                        <td>IMAGE</td>
+
+                        <td>850 KB</td>
+
+                        <td>
+                            <button class="delete-button"
+                                    onclick="deleteFile(this, 0.00085)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span class="file-icon">📊</span>
+                            Presentation.pptx
+                        </td>
+
+                        <td>PPTX</td>
+
+                        <td>350 KB</td>
+
+                        <td>
+                            <button class="delete-button"
+                                    onclick="deleteFile(this, 0.00035)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features"
+             class="section features-section">
+
+        <div class="section-title">
+
+            <span>WHY CLOUD COMPUTING?</span>
+
+            <h2>
+                Powerful Cloud Features
+            </h2>
+
+            <p>
+                Cloud compu
+```
