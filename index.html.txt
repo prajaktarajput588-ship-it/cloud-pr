@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBox - Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">☁ CloudBox</div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#files">My Files</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard -->
+        <section id="dashboard" class="hero">
+            <div>
+                <h1>Welcome to CloudBox</h1>
+                <p>
+                    Store, manage and access your files securely
+                    using cloud computing technology.
+                </p>
+
+                <button onclick="scrollToFiles()">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="cloud-icon">☁️</div>
+        </section>
+
+        <!-- Storage -->
+        <section class="storage-section">
+            <h2>Cloud Storage</h2>
+
+            <div class="storage-card">
+                <div class="storage-info">
+                    <span>Storage Used</span>
+                    <strong id="storageText">2.4 GB / 10 GB</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+
+                <p id="storagePercentage">24% used</p>
+            </div>
+        </section>
+
+        <!-- Files -->
+        <section id="files" class="files-section">
+            <div class="section-heading">
+                <div>
+                    <h2>My Files</h2>
+                    <p>Manage your files in the cloud.</p>
+                </div>
+
+                <label class="upload-btn">
+                    + Upload File
+                    <input
+                        type="file"
+                        id="fileInput"
+                        onchange="uploadFile()"
+                    >
+                </label>
+            </div>
+
+            <div class="file-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Type</th>
+                            <th>Size</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="fileList">
+                        <tr>
+                            <td>📄 Project_Report.pdf</td>
+                            <td>PDF</td>
+                            <td>1.2 MB</td>
+                            <td>
+                                <button class="delete-btn"
+                                    onclick="deleteFile(this, 1.2)">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>🖼️ Cloud_Image.jpg</td>
+                            <td>Image</td>
+                            <td>850 KB</td>
+                            <td>
+                                <button class="delete-btn"
+                                    onclick="deleteFile(this, 0.85)">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>📊 Presentation.pptx</td>
+                            <td>PowerPoint</td>
+                            <td>350 KB</td>
+                            <td>
+                                <button class="delete-btn"
+                                    onclick="deleteFile(this, 0.35)">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="about" class="features">
+            <h2>Cloud Computing Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div>🔐</div>
+                    <h3>Secure Storage</h3>
+                    <p>
+                        Keep your files safely stored in the cloud.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>🌍</div>
+                    <h3>Anywhere Access</h3>
+                    <p>
+                        Access your files from any device and location.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div>⚡</div>
+                    <h3>Fast & Reliable</h3>
+                    <p>
+                        Cloud resources can be accessed quickly and efficiently.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CloudBox | Cloud Computing Web Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
